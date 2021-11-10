@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserDaoService {
 	private static List<User> users = new ArrayList<>();
-	private static int userCount = 3;
+	private static Long userCount = 3L;
 
 	static {
-		users.add(new User(1, "22", LocalDate.now()));
-		users.add(new User(2, "4", LocalDate.now()));
-		users.add(new User(3, "555", LocalDate.now()));
+		users.add(new User(1L, "22", LocalDate.now()));
+		users.add(new User(2L, "4", LocalDate.now()));
+		users.add(new User(3L, "555", LocalDate.now()));
 	}
 
 	public List<User> findAll() {
